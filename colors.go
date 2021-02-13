@@ -11,212 +11,402 @@ func argb(c uint32) color.NRGBA {
 }
 
 var (
-	Red50  = Rgb(0xffebee)
+	// Red50 #FFEBEE
+	Red50 = Rgb(0xffebee)
+	// Red100 #FFCDD2
 	Red100 = Rgb(0xffcdd2)
+	// Red200 #EF9A9A
 	Red200 = Rgb(0xef9a9a)
+	// Red300 #E57373
 	Red300 = Rgb(0xe57373)
+	// Red400 #EF5350
 	Red400 = Rgb(0xef5350)
+	// Red500 #F44336
 	Red500 = Rgb(0xf44336)
+	// Red600 #E53935
 	Red600 = Rgb(0xe53935)
+	// Red700 #D32F2F
 	Red700 = Rgb(0xd32f2f)
+	// Red800 #C62828
 	Red800 = Rgb(0xc62828)
+	// Red900 #B71C1C
 	Red900 = Rgb(0xb71c1c)
 
-	Pink50  = Rgb(0xfce4ec)
+	// Pink50  #FCE4EC
+	Pink50 = Rgb(0xfce4ec)
+	// Pink100 #F8BBD0
 	Pink100 = Rgb(0xf8bbd0)
+	// Pink200 #F48FB1
 	Pink200 = Rgb(0xf48fb1)
+	// Pink300 #F06292
 	Pink300 = Rgb(0xf06292)
+	// Pink400 #EC407A
 	Pink400 = Rgb(0xec407a)
+	// Pink500 #E91E63
 	Pink500 = Rgb(0xe91e63)
+	// Pink600 #D81B60
 	Pink600 = Rgb(0xd81b60)
+	// Pink700 #C2185B
 	Pink700 = Rgb(0xc2185b)
+	// Pink800 #AD1457
 	Pink800 = Rgb(0xad1457)
+	// Pink900 #880E4F
 	Pink900 = Rgb(0x880e4f)
 
-	Purple50  = Rgb(0xf3e5f5)
+	// Purple50  #F3E5F5
+	Purple50 = Rgb(0xf3e5f5)
+	// Purple100 #E1BEE7
 	Purple100 = Rgb(0xe1bee7)
+	// Purple200 #CE93D8
 	Purple200 = Rgb(0xce93d8)
+	// Purple300 #BA68C8
 	Purple300 = Rgb(0xba68c8)
+	// Purple400 #AB47BC
 	Purple400 = Rgb(0xab47bc)
+	// Purple500 #9C27B0
 	Purple500 = Rgb(0x9c27b0)
+	// Purple600 #8E24AA
 	Purple600 = Rgb(0x8e24aa)
+	// Purple700 #7B1FA2
 	Purple700 = Rgb(0x7b1fa2)
+	// Purple800 #6A1B9A
 	Purple800 = Rgb(0x6a1b9a)
+	// Purple900 #4A148C
 	Purple900 = Rgb(0x4a148c)
 
-	DeepPurple50  = Rgb(0xede7f6)
+	// DeepPurple50 #EDE7F6
+	DeepPurple50 = Rgb(0xede7f6)
+	// DeepPurple100 #D1C4E9
 	DeepPurple100 = Rgb(0xd1c4e9)
+	// DeepPurple200 #B39DDB
 	DeepPurple200 = Rgb(0xb39ddb)
+	// DeepPurple300 #9575CD
 	DeepPurple300 = Rgb(0x9575cd)
+	// DeepPurple400 #7E57C2
 	DeepPurple400 = Rgb(0x7e57c2)
+	// DeepPurple500 #673AB7
 	DeepPurple500 = Rgb(0x673ab7)
+	// DeepPurple600 #5E35B1
 	DeepPurple600 = Rgb(0x5e35b1)
+	// DeepPurple700 #512DA8
 	DeepPurple700 = Rgb(0x512da8)
+	// DeepPurple800 #4527A0
 	DeepPurple800 = Rgb(0x4527a0)
+	// DeepPurple900 #311B92
 	DeepPurple900 = Rgb(0x311b92)
 
-	Indigo50  = Rgb(0xe8eaf6)
+	// Indigo50  #E8EAF6
+	Indigo50 = Rgb(0xe8eaf6)
+	// Indigo100 #C5CAE9
 	Indigo100 = Rgb(0xc5cae9)
+	// Indigo200 #9FA8DA
 	Indigo200 = Rgb(0x9fa8da)
+	// Indigo300 #7986CB
 	Indigo300 = Rgb(0x7986cb)
+	// Indigo400 #5C6BC0
 	Indigo400 = Rgb(0x5c6bc0)
+	// Indigo500 #3F51B5
 	Indigo500 = Rgb(0x3f51b5)
+	// Indigo600 #3949AB
 	Indigo600 = Rgb(0x3949ab)
+	// Indigo700 #303F9F
 	Indigo700 = Rgb(0x303f9f)
+	// Indigo800 #283593
 	Indigo800 = Rgb(0x283593)
+	// Indigo900 #1A237E
 	Indigo900 = Rgb(0x1a237e)
 
-	Blue50  = Rgb(0xe3f2fd)
+	// Blue50  #E3F2FD
+	Blue50 = Rgb(0xe3f2fd)
+	// Blue100 #BBDEFB
 	Blue100 = Rgb(0xbbdefb)
+	// Blue200 #90CAF9
 	Blue200 = Rgb(0x90caf9)
+	// Blue300 #64B5F6
 	Blue300 = Rgb(0x64b5f6)
+	// Blue400 #42A5F5
 	Blue400 = Rgb(0x42a5f5)
+	// Blue500 #2196F3
 	Blue500 = Rgb(0x2196f3)
+	// Blue600 #1E88E5
 	Blue600 = Rgb(0x1e88e5)
+	// Blue700 #1976D2
 	Blue700 = Rgb(0x1976d2)
+	// Blue800 #1565C0
 	Blue800 = Rgb(0x1565c0)
+	// Blue900 #0D47A1
 	Blue900 = Rgb(0x0d47a1)
 
-	LightBlue50  = Rgb(0xe1f5fe)
+	// LightBlue50  #E1F5FE
+	LightBlue50 = Rgb(0xe1f5fe)
+	// LightBlue100 #B3E5FC
 	LightBlue100 = Rgb(0xb3e5fc)
+	// LightBlue200 #81D4FA
 	LightBlue200 = Rgb(0x81d4fa)
+	// LightBlue300 #4FC3F7
 	LightBlue300 = Rgb(0x4fc3f7)
+	// LightBlue400 #29B6F6
 	LightBlue400 = Rgb(0x29b6f6)
+	// LightBlue500 #03A9F4
 	LightBlue500 = Rgb(0x03a9f4)
+	// LightBlue600 #039BE5
 	LightBlue600 = Rgb(0x039be5)
+	// LightBlue700 #0288D1
 	LightBlue700 = Rgb(0x0288d1)
+	// LightBlue800 #0277BD
 	LightBlue800 = Rgb(0x0277bd)
+	// LightBlue900 #01579B
 	LightBlue900 = Rgb(0x01579b)
 
-	Cyan50  = Rgb(0xe0f7fa)
+	// Cyan50  #E0F7FA
+	Cyan50 = Rgb(0xe0f7fa)
+	// Cyan100 #B2EBF2
 	Cyan100 = Rgb(0xb2ebf2)
+	// Cyan200 #80DEEA
 	Cyan200 = Rgb(0x80deea)
+	// Cyan300 #4DD0E1
 	Cyan300 = Rgb(0x4dd0e1)
+	// Cyan400 #26C6DA
 	Cyan400 = Rgb(0x26c6da)
+	// Cyan500 #00BCD4
 	Cyan500 = Rgb(0x00bcd4)
+	// Cyan600 #00ACC1
 	Cyan600 = Rgb(0x00acc1)
+	// Cyan700 #0097A7
 	Cyan700 = Rgb(0x0097a7)
+	// Cyan800 #00838F
 	Cyan800 = Rgb(0x00838f)
+	// Cyan900 #006064
 	Cyan900 = Rgb(0x006064)
 
-	Teal50  = Rgb(0xe0f2f1)
+	// Teal50  #E0F2F1
+	Teal50 = Rgb(0xe0f2f1)
+	// Teal100 #B2DFDB
 	Teal100 = Rgb(0xb2dfdb)
+	// Teal200 #80CBC4
 	Teal200 = Rgb(0x80cbc4)
+	// Teal300 #4DB6AC
 	Teal300 = Rgb(0x4db6ac)
+	// Teal400 #26A69A
 	Teal400 = Rgb(0x26a69a)
+	// Teal500 #009688
 	Teal500 = Rgb(0x009688)
+	// Teal600 #00897B
 	Teal600 = Rgb(0x00897b)
+	// Teal700 #00796B
 	Teal700 = Rgb(0x00796b)
+	// Teal800 #00695C
 	Teal800 = Rgb(0x00695c)
+	// Teal900 #004D40
 	Teal900 = Rgb(0x004d40)
 
-	Green50  = Rgb(0xe8f5e9)
+	// Green50  #E8F5E9
+	Green50 = Rgb(0xe8f5e9)
+	// Green100 #C8E6C9
 	Green100 = Rgb(0xc8e6c9)
+	// Green200 #A5D6A7
 	Green200 = Rgb(0xa5d6a7)
+	// Green300 #81C784
 	Green300 = Rgb(0x81c784)
+	// Green400 #66BB6A
 	Green400 = Rgb(0x66bb6a)
+	// Green500 #4CAF50
 	Green500 = Rgb(0x4caf50)
+	// Green600 #43A047
 	Green600 = Rgb(0x43a047)
+	// Green700 #388E3C
 	Green700 = Rgb(0x388e3c)
+	// Green800 #2E7D32
 	Green800 = Rgb(0x2e7d32)
+	// Green900 #1B5E2
 	Green900 = Rgb(0x1b5e2)
 
-	LightGreen50  = Rgb(0xf1f8e9)
+	// LightGreen50  #F1F8E9
+	LightGreen50 = Rgb(0xf1f8e9)
+	// LightGreen100 #DCEDC8
 	LightGreen100 = Rgb(0xdcedc8)
+	// LightGreen200 #C5E1A5
 	LightGreen200 = Rgb(0xc5e1a5)
+	// LightGreen300 #AED581
 	LightGreen300 = Rgb(0xaed581)
+	// LightGreen400 #9CCC65
 	LightGreen400 = Rgb(0x9ccc65)
+	// LightGreen500 #8BC34A
 	LightGreen500 = Rgb(0x8bc34a)
+	// LightGreen600 #7CB342
 	LightGreen600 = Rgb(0x7cb342)
+	// LightGreen700 #689F38
 	LightGreen700 = Rgb(0x689f38)
+	// LightGreen800 #558B2F
 	LightGreen800 = Rgb(0x558b2f)
+	// LightGreen900 #33691E
 	LightGreen900 = Rgb(0x33691e)
 
-	Lime50  = Rgb(0xf9fbe7)
+	// Lime50  #F9FBE7
+	Lime50 = Rgb(0xf9fbe7)
+	// Lime100 #F0F4C3
 	Lime100 = Rgb(0xf0f4c3)
+	// Lime200 #E6EE9C
 	Lime200 = Rgb(0xe6ee9c)
+	// Lime300 #DCE775
 	Lime300 = Rgb(0xdce775)
+	// Lime400 #D4E157
 	Lime400 = Rgb(0xd4e157)
+	// Lime500 #CDDC39
 	Lime500 = Rgb(0xcddc39)
+	// Lime600 #C0CA33
 	Lime600 = Rgb(0xc0ca33)
+	// Lime700 #AFB42B
 	Lime700 = Rgb(0xafb42b)
+	// Lime800 #9E9D24
 	Lime800 = Rgb(0x9e9d24)
+	// Lime900 #827717
 	Lime900 = Rgb(0x827717)
 
-	Yellow50  = Rgb(0xfffde7)
+	// Yellow50  #FFFDE7
+	Yellow50 = Rgb(0xfffde7)
+	// Yellow100 #FFF9C4
 	Yellow100 = Rgb(0xfff9c4)
+	// Yellow200 #FFF59D
 	Yellow200 = Rgb(0xfff59d)
+	// Yellow300 #FFF176
 	Yellow300 = Rgb(0xfff176)
+	// Yellow400 #FFEE58
 	Yellow400 = Rgb(0xffee58)
+	// Yellow500 #FFEB3B
 	Yellow500 = Rgb(0xffeb3b)
+	// Yellow600 #FDD835
 	Yellow600 = Rgb(0xfdd835)
+	// Yellow700 #FBC02D
 	Yellow700 = Rgb(0xfbc02d)
+	// Yellow800 #F9A825
 	Yellow800 = Rgb(0xf9a825)
+	// Yellow900 #F57F17
 	Yellow900 = Rgb(0xf57f17)
 
-	Amber50  = Rgb(0xfff8e1)
+	// Amber50  #FFF8E1
+	Amber50 = Rgb(0xfff8e1)
+	// Amber100 #FFECB3
 	Amber100 = Rgb(0xffecb3)
+	// Amber200 #FFE082
 	Amber200 = Rgb(0xffe082)
+	// Amber300 #FFD54F
 	Amber300 = Rgb(0xffd54f)
+	// Amber400 #FFCA28
 	Amber400 = Rgb(0xffca28)
+	// Amber500 #FFC107
 	Amber500 = Rgb(0xffc107)
+	// Amber600 #FFB300
 	Amber600 = Rgb(0xffb300)
+	// Amber700 #FFA000
 	Amber700 = Rgb(0xffa000)
+	// Amber800 #FF8F00
 	Amber800 = Rgb(0xff8f00)
+	// Amber900 #FF6F00
 	Amber900 = Rgb(0xff6f00)
 
-	Orange50  = Rgb(0xfff3e0)
+	// Orange50  #FFF3E0
+	Orange50 = Rgb(0xfff3e0)
+	// Orange100 #FFE0B2
 	Orange100 = Rgb(0xffe0b2)
+	// Orange200 #FFCC80
 	Orange200 = Rgb(0xffcc80)
+	// Orange300 #FFB74D
 	Orange300 = Rgb(0xffb74d)
+	// Orange400 #FFA726
 	Orange400 = Rgb(0xffa726)
+	// Orange500 #FF9800
 	Orange500 = Rgb(0xff9800)
+	// Orange600 #FB8C00
 	Orange600 = Rgb(0xfb8c00)
+	// Orange700 #F57C00
 	Orange700 = Rgb(0xf57c00)
+	// Orange800 #EF6C00
 	Orange800 = Rgb(0xef6c00)
+	// Orange900 #E65100
 	Orange900 = Rgb(0xe65100)
 
-	DeepOrange50  = Rgb(0xfbe9e7)
+	// DeepOrange50  #FBE9E7
+	DeepOrange50 = Rgb(0xfbe9e7)
+	// DeepOrange100 #FFCCBC
 	DeepOrange100 = Rgb(0xffccbc)
+	// DeepOrange200 #FFAB91
 	DeepOrange200 = Rgb(0xffab91)
+	// DeepOrange300 #FF8A65
 	DeepOrange300 = Rgb(0xff8a65)
+	// DeepOrange400 #FF7043
 	DeepOrange400 = Rgb(0xff7043)
+	// DeepOrange500 #FF5722
 	DeepOrange500 = Rgb(0xff5722)
+	// DeepOrange600 #F4511E
 	DeepOrange600 = Rgb(0xf4511e)
+	// DeepOrange700 #E64A19
 	DeepOrange700 = Rgb(0xe64a19)
+	// DeepOrange800 #D84315
 	DeepOrange800 = Rgb(0xd84315)
+	// DeepOrange900 #BF360C
 	DeepOrange900 = Rgb(0xbf360c)
 
-	Brown50  = Rgb(0xefebe9)
+	// Brown50  #EFEBE9
+	Brown50 = Rgb(0xefebe9)
+	// Brown100 #D7CCC8
 	Brown100 = Rgb(0xd7ccc8)
+	// Brown200 #BCAAA4
 	Brown200 = Rgb(0xbcaaa4)
+	// Brown300 #A1887F
 	Brown300 = Rgb(0xa1887f)
+	// Brown400 #8D6E63
 	Brown400 = Rgb(0x8d6e63)
+	// Brown500 #795548
 	Brown500 = Rgb(0x795548)
+	// Brown600 #6D4C41
 	Brown600 = Rgb(0x6d4c41)
+	// Brown700 #5D4037
 	Brown700 = Rgb(0x5d4037)
+	// Brown800 #4E342E
 	Brown800 = Rgb(0x4e342e)
+	// Brown900 #3E2723
 	Brown900 = Rgb(0x3e2723)
 
-	Grey50  = Rgb(0xfafafa)
+	// Grey50  #FAFAFA
+	Grey50 = Rgb(0xfafafa)
+	// Grey100 #F5F5F5
 	Grey100 = Rgb(0xf5f5f5)
+	// Grey200 #EEEEEE
 	Grey200 = Rgb(0xeeeeee)
+	// Grey300 #E0E0E0
 	Grey300 = Rgb(0xe0e0e0)
+	// Grey400 #BDBDBD
 	Grey400 = Rgb(0xbdbdbd)
+	// Grey500 #9E9E9E
 	Grey500 = Rgb(0x9e9e9e)
+	// Grey600 #757575
 	Grey600 = Rgb(0x757575)
+	// Grey700 #616161
 	Grey700 = Rgb(0x616161)
+	// Grey800 #424242
 	Grey800 = Rgb(0x424242)
+	// Grey900 #212121
 	Grey900 = Rgb(0x212121)
 
-	BlueGrey50  = Rgb(0xeceff1)
+	// BlueGrey50  #ECEFF1
+	BlueGrey50 = Rgb(0xeceff1)
+	// BlueGrey100 #CFD8DC
 	BlueGrey100 = Rgb(0xcfd8dc)
+	// BlueGrey200 #B0BEC5
 	BlueGrey200 = Rgb(0xb0bec5)
+	// BlueGrey300 #90A4AE
 	BlueGrey300 = Rgb(0x90a4ae)
+	// BlueGrey400 #78909C
 	BlueGrey400 = Rgb(0x78909c)
+	// BlueGrey500 #607D8B
 	BlueGrey500 = Rgb(0x607d8b)
+	// BlueGrey600 #546E7A
 	BlueGrey600 = Rgb(0x546e7a)
+	// BlueGrey700 #455A64
 	BlueGrey700 = Rgb(0x455a64)
+	// BlueGrey800 #37474F
 	BlueGrey800 = Rgb(0x37474f)
+	// BlueGrey900 #263238
 	BlueGrey900 = Rgb(0x263238)
 )
