@@ -11,6 +11,11 @@ func argb(c uint32) color.NRGBA {
 }
 
 var (
+	// White #FFFFFF
+	White = Rgb(0xffffff)
+	// Black #000000
+	Black = Rgb(0x000000)
+
 	// Red50 #FFEBEE
 	Red50 = Rgb(0xffebee)
 	// Red100 #FFCDD2
